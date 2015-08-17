@@ -4,10 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.parse.Parse;
-import com.parse.ParseACL;
 import com.parse.ParseAnonymousUtils;
-import com.parse.ParseObject;
 import com.parse.ParseUser;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // Enable Local Datastore.
-        Parse.initialize(this, "MrHkdJiEcUHQpKZ8nguq9YqSr7k5VWUFlXNTJ1rl", "r0YBIu2812EnHkmOQOlwzOkZc91PbyMmwGaulY3n");
+        /*
+      //  Parse.initialize(this, "MrHkdJiEcUHQpKZ8nguq9YqSr7k5VWUFlXNTJ1rl", "r0YBIu2812EnHkmOQOlwzOkZc91PbyMmwGaulY3n");
         ParseUser.enableAutomaticUser();
         ParseACL defaultACL = new ParseACL();
 
@@ -31,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         gameScore.put("playerName", "Sean Plott");
         gameScore.put("cheatMode", false);
         gameScore.saveInBackground();
-
+*/
         // Determine whether the current user is an anonymous user
         if (ParseAnonymousUtils.isLinked(ParseUser.getCurrentUser())) {
             // If user is anonymous, send the user to LoginSignupActivity.class
