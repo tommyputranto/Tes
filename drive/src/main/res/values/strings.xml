@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Drive</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--SIGNUP-->
+    <string name="userdata_title">Your Data</string>
+    <string name="useraccount_title">Your Account</string>
+    <string name="prompt_fullname">Enter Your Full Name</string>
+    <string name="prompt_phone">Enter Your Phone Number</string>
+    <string name="prompt_email">Enter Your Email Address</string>
+    <string name="prompt_password">Enter Your Password</string>
+    <string name="prompt_retype_password">Retype Your Password</string>
+    <string name="signup">Sign up</string>
+
+    <!--LOGIN-->
+    <string name="login">Login</string>
+
+    <!--ACTIVITY-->
+    <string name="title_activity_login">Log in</string>
+    <string name="title_activity_signup">Sign up</string>
+    <string name="title_activity_search">Search</string>
+
+    <!--MAIN ACTIVITY-->
+    <string name="lokasi_asal">Lokasi Asal</string>
+    <string name="lokasi_tujuan">Lokasi Tujuan</string>
+    <string name="cari_anjem_button">Cari Anjem</string>
+    <string name="jumlah_penumpang_view">1</string>
+    <string name="plus_button">+</string>
+    <string name="minus_button">-</string>
+    <string name="date_hint">DD/MM/YY</string>
+    <string name="time_hint">00:00</string>
+
+    <!--SEARCH ACTIVITY-->
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample uses the Google Places Geo Data API for Android to provide autocomplete suggestions.
+            It shows how to use a custom Adapter to display suggestions in an AutocompleteTextView.
+            Once selected, details about a place are retrieved based on its Place id from the
+            Places Geo Data API.
+
+
+        ]]>
+    </string>
+    <string name="autocomplete_hint">Enter place name or address</string>
+    <string name="selected_place">Last Selected Place:</string>
+    <string name="clear_text">Clear Text</string>
+    <string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;i&gt;Place Id: %2$s&lt;/i&gt;&lt;br/&gt;Address: %3$s&lt;br/&gt;Phone: %4$s&lt;br/&gt;Website: %5$s</string>
+    <string name="set_text">Set Text</string>
+
+    <!--MAPS-->
+    <string name="search_maps">Search</string>
+    <string name="error_blank_location">enter the location</string>
+
+    <!--ERROR-->
+    <string name="error_intro">"Please "</string>
+    <string name="error_blank_username">enter a username</string>
+    <string name="error_blank_password">enter a password</string>
+    <string name="error_password_length">minimum password length is 6 digits</string>
+    <string name="error_blank_phone">enter a phone</string>
+    <string name="error_blank_email">enter a email</string>
+    <string name="error_mismatched_passwords">enter the same password twice</string>
+    <string name="error_join">", and "</string>
+    <string name="error_end">.</string>
+    <string name="progress_login">Logging you in&#8230;</string>
+    <string name="progress_signup">Signing you up&#8230;</string>
+
+    <string name="error_blank_lokasiasal">enter lokasi asal</string>
+    <string name="error_blank_descasal">enter desc asal</string>
+    <string name="error_blank_lokasitujuan">enter lokasi tujuan</string>
+    <string name="error_blank_desctujuan">enter lokasi tujuan</string>
+    <string name="error_blank_date">enter date and time</string>
+    <string name="progress_post">Requesting you up&#8230;</string>
+
+
+
+    <!--PARSE KEY-->
+    <string name="parse_app_id">MUm8PdslDTOcecThSkV7xV1JQ5SS9vw5nXtLdsiO</string>
+    <string name="parse_client_id">Q2N5HjJKQxUcZLd6hPmkMMBlqNRtbUWc8XyGqxIe</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

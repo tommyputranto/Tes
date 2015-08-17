@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabCreate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/lokasiasal_places"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="@string/autocomplete_hint"
+                        android:textColor="@android:color/primary_text_light" />
+
+                    <EditText
+                        android:id="@+id/descasal_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:ems="10"
+                        android:inputType="textMultiLine" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/lokasitujuan_places"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="@string/autocomplete_hint"
+                        android:textColor="@android:color/primary_text_light" />
+
+                    <EditText
+                        android:id="@+id/desctujuan_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:ems="10"
+                        android:inputType="textMultiLine" />
+
+                    <EditText
+                        android:id="@+id/date_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:editable="false"
+                        android:ems="10"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/date_hint"
+                        android:inputType="date" />
+
+                    <EditText
+                        android:id="@+id/time_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:editable="false"
+                        android:ems="10"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/time_hint"
+                        android:inputType="date" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp">
+
+                        <TextView
+                            android:id="@+id/jumlahpenumpang_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/jumlah_penumpang_view"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="50dp" />
+
+                        <Button
+                            android:id="@+id/tambah_button"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="left"
+                            android:background="#000000"
+                            android:text="@string/plus_button"
+                            android:textColor="#ffffff"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/kurang_button"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="left"
+                            android:background="#000000"
+                            android:text="@string/minus_button"
+                            android:textColor="#ffffff"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/carianjem_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/cari_anjem_button" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/driverImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/driver_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Nama Driver" />
+
+                    <TextView
+                        android:id="@+id/from_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="From : Surabaya" />
+
+                    <TextView
+                        android:id="@+id/descFrom_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Desc : Surabaya no 6 rt6" />
+
+                    <TextView
+                        android:id="@+id/to_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="To : Surabaya" />
+
+                    <TextView
+                        android:id="@+id/descTo_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Desc : Surabaya no 6 rt6" />
+
+                    <TextView
+                        android:id="@+id/jumlahPenumpang_postView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="1" />
+
+                    <TextView
+                        android:id="@+id/dateFor_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="For : DD/MM/YYYY 00:00" />
+
+                    <TextView
+                        android:id="@+id/status_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Pending" />
+
+                    <Button
+                        android:id="@+id/abort_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Abort" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</ScrollView>
+
+
+</LinearLayout>

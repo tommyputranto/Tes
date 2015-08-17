@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="integer" name="customImeActionId" format="integer">100</item>
+    <item type="integer" name="loginImeActionId" format="integer">101</item>
+    <item type="integer" name="signupImeActionId" format="integer">102</item>
+</resources>

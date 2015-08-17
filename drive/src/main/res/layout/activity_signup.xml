@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/userdata_title"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_edit_text"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="@string/prompt_fullname"
+        android:maxLines="1"
+        android:singleLine="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_edit_text"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="@string/prompt_phone"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/useraccount_title"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_edit_text"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="@string/prompt_email"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_edit_text"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="@string/prompt_password"
+        android:maxLines="1"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_retype_edit_text"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/prompt_retype_password"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeActionId="@integer/signupImeActionId"
+        android:imeActionLabel="@string/signup"
+        android:imeOptions="actionUnspecified"
+        />
+    <!--
+        android:imeActionId="@+id/edittext_action_signup"
+        android:imeActionLabel="@string/signup"
+        android:imeOptions="actionUnspecified"
+    -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/signup_button"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="@string/signup"
+        />
+</LinearLayout>
