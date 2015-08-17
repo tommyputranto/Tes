@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 import com.parse.LogInCallback;
 import com.parse.ParseUser;
-import com.parse.SignUpCallback;
 
 public class LoginSignupActivity extends AppCompatActivity {
     // Declare Variables
@@ -74,38 +73,9 @@ public class LoginSignupActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View arg0) {
-                // Retrieve the text entered from the EditText
-                usernametxt = username.getText().toString();
-                passwordtxt = password.getText().toString();
+                Intent intent = new Intent(LoginSignupActivity.this, SignupActivity.class);
+                startActivity(intent);
 
-                // Force user to fill up the form
-                if (usernametxt.equals("") && passwordtxt.equals("")) {
-                    Toast.makeText(getApplicationContext(),
-                            "Please complete the sign up form",
-                            Toast.LENGTH_LONG).show();
-
-                } else {
-                    // Save new user data into Parse.com Data Storage
-                    ParseUser user = new ParseUser();
-                    user.setUsername(usernametxt);
-                    user.setPassword(passwordtxt);
-                    user.signUpInBackground(new SignUpCallback() {
-                        @Override
-                        public void done(com.parse.ParseException e) {
-                            if (e == null) {
-                                // Show a simple Toast message upon successful registration
-                                Toast.makeText(getApplicationContext(),
-                                        "Successfully Signed up, please log in.",
-                                        Toast.LENGTH_LONG).show();
-                            } else {
-                                Toast.makeText(getApplicationContext(),
-                                        "Sign up Error", Toast.LENGTH_LONG)
-                                        .show();
-                            }
-                        }
-
-                    });
-                }
 
             }
         });

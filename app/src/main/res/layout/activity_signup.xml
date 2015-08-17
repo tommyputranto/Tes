@@ -21,12 +21,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/fullName"
         android:hint="Enter Your Full Name"
+        android:inputType="text"
        />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/phoneNumber"
         android:hint="Enter Your Phone Number"
+        android:inputType="phone"
         />
     <TextView
         android:layout_gravity="center"
@@ -42,18 +44,21 @@
         android:layout_height="wrap_content"
         android:id="@+id/emailAddress"
         android:hint="Enter Your Email Address"
+        android:inputType="textEmailAddress"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/passwordSignup"
         android:hint="Enter Your Password"
+        android:inputType="textPassword"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/retypePassword"
         android:hint="Retype Your Password"
+        android:inputType="textPassword"
         />
 
     <Button

@@ -1,5 +1,6 @@
 package com.androbos.tes;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -65,6 +66,8 @@ public class SignupActivity extends AppCompatActivity {
                                     Toast.makeText(getApplicationContext(),
                                             "Successfully Signed up, please log in.",
                                             Toast.LENGTH_LONG).show();
+                                    Intent intent = new Intent(SignupActivity.this, LoginSignupActivity.class);
+                                    startActivity(intent);
                                 } else {
                                     Toast.makeText(getApplicationContext(),
                                             "Sign up Error", Toast.LENGTH_LONG)
