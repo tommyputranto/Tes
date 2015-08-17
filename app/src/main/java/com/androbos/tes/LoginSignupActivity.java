@@ -1,31 +1,22 @@
 package com.androbos.tes;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.parse.Parse;
-import com.parse.ParseObject;
-
-public class MainActivity extends AppCompatActivity {
+public class LoginSignupActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        // Enable Local Datastore.
-        Parse.initialize(this, "MrHkdJiEcUHQpKZ8nguq9YqSr7k5VWUFlXNTJ1rl", "r0YBIu2812EnHkmOQOlwzOkZc91PbyMmwGaulY3n");
-        ParseObject gameScore = new ParseObject("GameScore");
-        gameScore.put("score", 1337);
-        gameScore.put("playerName", "Sean Plott");
-        gameScore.put("cheatMode", false);
-        gameScore.saveInBackground();
+        setContentView(R.layout.activity_login_signup);
     }
-        @Override
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_login_signup, menu);
         return true;
     }
 
